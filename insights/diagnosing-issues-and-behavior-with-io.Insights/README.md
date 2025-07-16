@@ -10,7 +10,7 @@ We have two interconnected applications:
 
 - **Client List**: Displays client information fetched from a backend, allowing user selection.
 - **Portfolio Viewer**: Subscribes to selection changes from the Client List, fetching and displaying detailed portfolio data.
-- 
+
 <img width="50%" height="50%" alt="image" src="https://github.com/user-attachments/assets/9725c636-a9ca-4737-8308-9bfef4779d46" />
 
 The synchronization has stopped for a specific user, and we want to quickly trace and pinpoint the issue. We'll be using io.Insights to collect and pass all data and Grafana as an example platform for exploration and analysis. Any alternative of Grafana can be used in a similar way.
