@@ -7,4 +7,4 @@ A list of Community guides, tutorials and examples
 ## io.Insights
 :mag: [Diagnosing issues and behavior with io.Insights](https://github.com/InteropIO/community-articles/tree/master/insights/diagnosing-issues-and-behavior-with-io.Insights) 
 
-_More articles to be added soon._
+_More articles to be added soon.._
