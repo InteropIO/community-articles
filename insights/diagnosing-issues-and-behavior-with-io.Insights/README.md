@@ -89,8 +89,6 @@ This explains the error entirely - the user doesn't have the required access to 
 - Inform the user about the permission settings.
 - Optionally, investigate entitlement assignment via further trace exploration.
 
-### Time saved
-
-No ticket escalations and no guessing - finding a tricky problem took just few minutes. The out-of-the-box instruments provided by io.Connect + io.Insights gives you everything you need with minimum setup in the observability platform you are already familiar with.
+So no ticket escalations and no guessing - finding a tricky problem took just few minutes. The out-of-the-box instruments provided by io.Connect + io.Insights gives you everything you need with minimum setup in the observability platform you are already familiar with.
 
 **In the next article, we'll cover custom instruments and more advanced workflows across services.**
