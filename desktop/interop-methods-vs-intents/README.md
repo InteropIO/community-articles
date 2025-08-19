@@ -1,4 +1,6 @@
-Authors: Martyn Bedford, Kalina Georgieva
+# **Interop methods vs Intents**
+
+_Authors: Martyn Bedford, Kalina Georgieva_
 
 One of the core strengths of io.Connect is enabling apps to invoke functionality in one another. This can be done using **Intents** and **Interop methods,** which serve different purposes and sometimes are confusing for new developers building integrations:
 
