@@ -3,7 +3,9 @@ A list of Community guides, tutorials and examples
 
 ## io.Connect Desktop
 :vs: [Interop methods vs Intents](https://github.com/InteropIO/community-articles/tree/master/desktop/interop-methods-vs-intents)
+
 👓 [Understanding logs in io.Connect](https://github.com/InteropIO/community-articles/tree/master/desktop/understanding-logs)
+
 :pencil2: [Customize Themes in io.Connect Desktop](https://github.com/InteropIO/community-articles/tree/master/desktop/customizing-themes-in-io.connect-desktop) 
 
 ## io.Insights
