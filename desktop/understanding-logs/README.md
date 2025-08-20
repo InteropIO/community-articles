@@ -103,8 +103,12 @@ The application-specific logs are written by the applications participating in t
 Default location: **`%LocalAppData%\interop.io\io.Connect Desktop\UserData\<ENV>-<REG>\logs\applications`**
 
 ***Important: application-specific logs are not to be confused with the Electron application.log.***
+<figure>
+<img width="975" height="262" alt="image" src="https://github.com/user-attachments/assets/4a8b98ac-a31b-4d93-8857-a3b8ef842356" />
+<figcaption>Example of application logs</figcaption>
+</figure>
 
-*Example of application logs*
+---
 
 From **9.9** onward you can funnel a web app’s own uncaught errors, console messages and failed network requests into the shared **application.log** (under **`<installation_location>/interop.io/io.Connect Desktop/UserData/<ENV>-<REG>/logs`**) so frontend events sit in the same timeline as platform activity.
 
