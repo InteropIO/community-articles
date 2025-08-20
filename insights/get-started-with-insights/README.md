@@ -104,6 +104,8 @@ Grafana is a powerful platform that can be used to visualize metrics, traces and
 
 Grafana is offered as Grafana Cloud and an open-source download. If you want to keep your data local go with the downloads, it’s super straightforward. Simply visit https://grafana.com/grafana/download, if you are a Windows user, select Windows and download the Standalone Windows Binaries zip -> right-click and select the `unblock` checkbox, and click OK, now unzip the archive to your preferred location. In that folder, open /bin and run `grafana-server.exe`, which will start Grafana. Now you can open a browser and enter http://localhost:3000/ (or replace the port if preferred).
 
+<img width="975" height="488" alt="image" src="https://github.com/user-attachments/assets/ac968e49-bdda-42b3-adf5-a53be322e87e" />
+
 Default login credentials are admin/admin (make sure to change your password and keep it safe). That’s it you can now play around.
 
 In the left-hand sidebar select `Connections` -> `Data Sources`, click **+ Add new data source** and select Prometheus.
@@ -114,16 +116,18 @@ Grafana is your cockpit used to visualize the *dashboard*, but the downloadable 
 
 Grafana ships “native support for Prometheus”, so you can point it at a running Prometheus and it can query with PromQL.
 
-Prometheus can be downloaded from https://prometheus.io/download/ and configured via `prometheus.yml` following the steps here https://prometheus.io/docs/introduction/first_steps/ . By default Prometheus runs on localhost:9090.
+Prometheus can be downloaded from https://prometheus.io/download/ and configured via `prometheus.yml` following the steps here https://prometheus.io/docs/introduction/first_steps/ . By default Prometheus runs on `localhost:9090`.
 
 **Prometheus config (scrape the Collector)**
 
 Add a scrape job to your prometheus.yml:
 
+```
 scrape_configs:
-- job_name: 'otel-collector'
-static_configs:
-- targets: ['localhost:8889'] # this is the collector's prometheus exporter endpoint
+  - job_name: 'otel-collector'
+    static_configs:
+      - targets: ['localhost:9464']   # default Prometheus exporter endpoint
+```
 
 Prometheus will now scrape all metrics the collector exposes (including metrics your apps send via OTLP that the collector converts to Prometheus format).
 
@@ -134,6 +138,8 @@ There are several alternatives that play well with Grafana
 * **Grafana** **Agent / Alloy** - embeds a cut‑down Prometheus engine
 * **Grafana Cloud or Mimir** – easiest to set up, but runs remotely
 * **Other TSDBs** ― InfluxDB, VictoriaMetrics, TimescaleDB, etc.
+
+<img width="975" height="362" alt="image" src="https://github.com/user-attachments/assets/3b12ce80-3af2-463f-95fb-1c349a0d7dd5" />
 
 **Visualize traces in Grafana to combine the power of metrics and traces**
 
